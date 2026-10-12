@@ -18,3 +18,17 @@ class Config:
     min_iou: float = 0.2
     max_jump: float = 1.5  # в ширинах бокса
     max_missed: int = 15
+
+    # зоны в градусах от центра кадра
+    stop_deg: float = 4.0
+    warn_deg: float = 12.0
+    edge_deg: float = 24.0
+
+    alpha: float = 0.5
+    beta: float = 0.05
+    predict_time: float = 0.6
+    confirm_time: float = 0.3
+
+    settle_time: float = 0.3
+    blink_time: float = 0.3
+    lost_hold: float = 1.5
