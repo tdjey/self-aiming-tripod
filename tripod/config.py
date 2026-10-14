@@ -32,3 +32,8 @@ class Config:
     settle_time: float = 0.3
     blink_time: float = 0.3
     lost_hold: float = 1.5
+
+    # лимиты хода сервы живут в прошивке, тут только скорость
+    servo_speed: float = 300.0  # мкс/с
+    # тяга стоит так, что рост мкс крутит камеру влево
+    servo_dir: int = -1
